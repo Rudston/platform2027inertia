@@ -12,8 +12,10 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         // Detect and apply the request locale on every web request (incl. Livewire XHR).
+        // HandleInertiaRequests runs after so shared translations reflect the locale.
         $middleware->web(append: [
             \App\Http\Middleware\SetLocaleFromBrowser::class,
+            \App\Http\Middleware\HandleInertiaRequests::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {

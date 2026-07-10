@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\ServiceProvider;
@@ -21,6 +22,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // Drop the "data" wrapper from API Resources so they serialise as plain
+        // arrays/objects — cleaner as Inertia props (e.g. location.communities
+        // is an array, not { data: [...] }).
+        JsonResource::withoutWrapping();
+
         // Allow <x-layouts.*> to resolve to resources/views/layouts/*.blade.php
         // (same files Livewire components reference via #[Layout('layouts.*')]).
         Blade::anonymousComponentPath(resource_path('views/layouts'), 'layouts');
