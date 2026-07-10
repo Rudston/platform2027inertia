@@ -13,7 +13,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('circles', function (Blueprint $table) {
-            // Lifecycle state, backed by App\Enums\CircleStatus.
+            // Lifecycle state, backed by App\Enums\Explorer\CircleStatus.
             $table->string('status')->default('active')->after('path');
         });
 

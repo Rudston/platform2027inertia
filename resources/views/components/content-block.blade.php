@@ -16,10 +16,10 @@
 
 @php
     // Cached, locale-aware content (current locale → English → fallback).
-    $__content = \App\Models\ContentBlock::get($key, $fallback);
+    $__content = \App\Models\Explorer\ContentBlock::get($key, $fallback);
 
     // Block metadata for escaping choice, collapsible behaviour + inline edit link.
-    $__block = \App\Models\ContentBlock::query()->where('key', $key)->first();
+    $__block = \App\Models\Explorer\ContentBlock::query()->where('key', $key)->first();
     $__isHtml = (bool) ($__block?->is_html ?? false);
 
     // Resolve collapsible behaviour — explicit inline props override the model.

@@ -2,11 +2,11 @@
 
 namespace App\Traits;
 
-use App\Models\Circles\Circle;
+use App\Models\Explorer\Circles\Circle;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 /**
- * Fulfils the App\Contracts\Circleable contract for any model that owns a
+ * Fulfils the App\Contracts\Explorer\Circleable contract for any model that owns a
  * Circle. Use alongside `implements Circleable` on the consuming model.
  */
 trait HasCircle

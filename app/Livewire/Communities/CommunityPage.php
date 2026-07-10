@@ -2,8 +2,8 @@
 
 namespace App\Livewire\Communities;
 
-use App\Enums\CommunityType;
-use App\Models\Circles\Circle;
+use App\Enums\Explorer\CommunityType;
+use App\Models\Explorer\Circles\Circle;
 use Illuminate\Database\Eloquent\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Attributes\Layout;

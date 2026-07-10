@@ -2,13 +2,13 @@
 
 namespace Database\Seeders\Circles;
 
-use App\Enums\CommunityType;
-use App\Enums\LocatableType;
-use App\Models\Demography\City;
-use App\Models\Demography\Country;
-use App\Models\Demography\DistrictMunicipality;
-use App\Models\Demography\LocalMunicipality;
-use App\Models\Demography\Province;
+use App\Enums\Explorer\CommunityType;
+use App\Enums\Explorer\LocatableType;
+use App\Models\Explorer\Demography\City;
+use App\Models\Explorer\Demography\Country;
+use App\Models\Explorer\Demography\DistrictMunicipality;
+use App\Models\Explorer\Demography\LocalMunicipality;
+use App\Models\Explorer\Demography\Province;
 use App\Services\Circles\CircleCreationService;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;

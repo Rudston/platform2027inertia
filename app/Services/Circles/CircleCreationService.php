@@ -15,11 +15,11 @@
 
 namespace App\Services\Circles;
 
-use App\Enums\CommunityType;
-use App\Enums\LocatableType;
-use App\Models\Circles\Circle;
-use App\Models\Organisation;
-use App\Models\Theme;
+use App\Enums\Explorer\CommunityType;
+use App\Enums\Explorer\LocatableType;
+use App\Models\Explorer\Circles\Circle;
+use App\Models\Explorer\Organisation;
+use App\Models\Explorer\Theme;
 use Illuminate\Support\Facades\DB;
 
 class CircleCreationService

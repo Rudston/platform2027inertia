@@ -2,7 +2,7 @@
 
 namespace App\Services\Circles;
 
-use App\Models\Circles\Circle;
+use App\Models\Explorer\Circles\Circle;
 use App\Models\User;
 
 class CircleMembershipService

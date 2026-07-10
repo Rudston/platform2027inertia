@@ -1,5 +1,5 @@
 @php
-    /** @var \App\Models\Circles\Circle $circle */
+    /** @var \App\Models\Explorer\Circles\Circle $circle */
 @endphp
 <div class="flex flex-col rounded-lg border border-border-muted bg-surface p-4 shadow-sm">
     <div class="flex items-start justify-between">
@@ -16,7 +16,7 @@
         <span class="text-xs text-muted">{{ __('communities.card.members', ['count' => 0]) }}</span>
         <div class="flex items-center gap-2">
             {{-- Pending badge: only pending circles reach the card (admins/superadmins). --}}
-            @if ($circle->status === \App\Enums\CircleStatus::Pending)
+            @if ($circle->status === \App\Enums\Explorer\CircleStatus::Pending)
                 <span class="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800">
                     {{ __('communities.status_pending') }}
                 </span>

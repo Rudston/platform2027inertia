@@ -2,7 +2,7 @@
     /** @var string $type */
     /** @var string $label */
     /** @var string|null $howToKey  Content block key for this type, or null (from the component). */
-    $isOrganisation = \App\Enums\CommunityType::tryFrom($type) === \App\Enums\CommunityType::Organisation;
+    $isOrganisation = \App\Enums\Explorer\CommunityType::tryFrom($type) === \App\Enums\Explorer\CommunityType::Organisation;
 @endphp
 <div class="p-6">
     <div class="flex items-start justify-between gap-4">

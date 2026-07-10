@@ -2,7 +2,7 @@
 
 namespace Database\Seeders\Circles;
 
-use App\Models\Circles\Service;
+use App\Models\Explorer\Circles\Service;
 use App\Services\Circles\ManageEventsService;
 use App\Services\Circles\ManageInteractionService;
 use App\Services\Circles\ManageLearningService;

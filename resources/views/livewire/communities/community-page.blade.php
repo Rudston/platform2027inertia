@@ -1,5 +1,5 @@
 @php
-    /** @var \App\Models\Circles\Circle $circle */
+    /** @var \App\Models\Explorer\Circles\Circle $circle */
     /** @var string $backUrl */
 @endphp
 {{-- Full height, 80% width, centred. Rendered in layouts.main (public shell

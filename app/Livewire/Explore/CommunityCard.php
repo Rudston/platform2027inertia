@@ -2,8 +2,8 @@
 
 namespace App\Livewire\Explore;
 
-use App\Enums\CommunityType;
-use App\Models\Circles\Circle;
+use App\Enums\Explorer\CommunityType;
+use App\Models\Explorer\Circles\Circle;
 use Livewire\Component;
 
 class CommunityCard extends Component

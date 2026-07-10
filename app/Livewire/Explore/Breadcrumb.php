@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Explore;
 
-use App\Enums\CommunityType;
+use App\Enums\Explorer\CommunityType;
 use Livewire\Attributes\Reactive;
 use Livewire\Component;
 

@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\ContentBlock;
+use App\Models\Explorer\ContentBlock;
 use Illuminate\Database\Seeder;
 
 class ContentBlockSeeder extends Seeder

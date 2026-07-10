@@ -2,11 +2,11 @@
 
 namespace App\Livewire\Explore;
 
-use App\Enums\CircleStatus;
-use App\Enums\CommunityType;
-use App\Models\Circles\Circle;
-use App\Models\Organisation;
-use App\Models\Communication\Request;
+use App\Enums\Explorer\CircleStatus;
+use App\Enums\Explorer\CommunityType;
+use App\Models\Explorer\Circles\Circle;
+use App\Models\Explorer\Organisation;
+use App\Models\Explorer\Communication\Request;
 use App\Models\User;
 use App\Services\Circles\CircleCreationService;
 use App\Services\Communication\EmailServiceHandler;

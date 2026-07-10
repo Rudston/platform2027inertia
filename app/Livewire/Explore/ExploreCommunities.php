@@ -2,10 +2,10 @@
 
 namespace App\Livewire\Explore;
 
-use App\Enums\CommunityType;
-use App\Enums\LocatableType;
-use App\Models\Circles\Circle;
-use App\Models\Demography\CoordinateData;
+use App\Enums\Explorer\CommunityType;
+use App\Enums\Explorer\LocatableType;
+use App\Models\Explorer\Circles\Circle;
+use App\Models\Explorer\Demography\CoordinateData;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Computed;
 use Livewire\Attributes\Layout;

@@ -5,7 +5,7 @@ namespace App\Filament\Resources\ContentBlocks;
 use App\Filament\Resources\ContentBlocks\Pages\CreateContentBlock;
 use App\Filament\Resources\ContentBlocks\Pages\EditContentBlock;
 use App\Filament\Resources\ContentBlocks\Pages\ListContentBlocks;
-use App\Models\ContentBlock;
+use App\Models\Explorer\ContentBlock;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;

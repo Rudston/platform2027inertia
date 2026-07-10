@@ -8,13 +8,13 @@
 
 @php
     $isLocationMode = $selectedType === null
-        || $selectedType === \App\Enums\CommunityType::LocationCommunity->value;
+        || $selectedType === \App\Enums\Explorer\CommunityType::LocationCommunity->value;
 
     // True when this column is listing terminal-level results (the bottom of
     // the geographic hierarchy) — used to show the "request a location" button.
     $isTerminalLevel = $isLocationMode
         && $communities->isNotEmpty()
-        && (\App\Enums\LocatableType::tryFrom((string) $communities->first()->locatable_type)?->isTerminal() ?? false);
+        && (\App\Enums\Explorer\LocatableType::tryFrom((string) $communities->first()->locatable_type)?->isTerminal() ?? false);
 
     // Short geographic badge for a location circle.
     $badgeFor = function ($circle) {

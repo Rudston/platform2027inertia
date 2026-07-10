@@ -2,10 +2,10 @@
 
 namespace Database\Seeders\Circles;
 
-use App\Enums\CommunityType;
-use App\Enums\LocatableType;
-use App\Models\Circles\Circle;
-use App\Models\Demography\MainPlace;
+use App\Enums\Explorer\CommunityType;
+use App\Enums\Explorer\LocatableType;
+use App\Models\Explorer\Circles\Circle;
+use App\Models\Explorer\Demography\MainPlace;
 use App\Services\Circles\CircleCreationService;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;

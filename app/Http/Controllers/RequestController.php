@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Enums\CircleStatus;
-use App\Enums\CommunityType;
-use App\Models\Circles\Circle;
-use App\Models\Communication\Request as RequestModel;
+use App\Enums\Explorer\CircleStatus;
+use App\Enums\Explorer\CommunityType;
+use App\Models\Explorer\Circles\Circle;
+use App\Models\Explorer\Communication\Request as RequestModel;
 use App\Services\Communication\EmailServiceHandler;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;

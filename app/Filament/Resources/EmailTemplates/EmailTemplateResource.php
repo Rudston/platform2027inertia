@@ -5,7 +5,7 @@ namespace App\Filament\Resources\EmailTemplates;
 use App\Filament\Resources\EmailTemplates\Pages\CreateEmailTemplate;
 use App\Filament\Resources\EmailTemplates\Pages\EditEmailTemplate;
 use App\Filament\Resources\EmailTemplates\Pages\ListEmailTemplates;
-use App\Models\Communication\EmailTemplate;
+use App\Models\Explorer\Communication\EmailTemplate;
 use BackedEnum;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;

@@ -2,8 +2,8 @@
 
 namespace App\Services\Circles;
 
-use App\Contracts\CircleServiceContract;
-use App\Models\Circles\Circle;
+use App\Contracts\Explorer\CircleServiceContract;
+use App\Models\Explorer\Circles\Circle;
 
 class ManageUsersService implements CircleServiceContract
 {

@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Enums\CommunityType;
-use App\Enums\LocatableType;
-use App\Models\Circles\Circle;
-use App\Models\Communities\ThemeCommunity;
-use App\Models\Theme;
+use App\Enums\Explorer\CommunityType;
+use App\Enums\Explorer\LocatableType;
+use App\Models\Explorer\Circles\Circle;
+use App\Models\Explorer\Communities\ThemeCommunity;
+use App\Models\Explorer\Theme;
 use App\Services\Circles\CircleCreationService;
 use Illuminate\Database\Seeder;
 

@@ -2,10 +2,10 @@
 
 namespace App\Services\Communication;
 
-use App\Contracts\CircleServiceContract;
+use App\Contracts\Explorer\CircleServiceContract;
 use App\Mail\TemplateMailable;
-use App\Models\Circles\Circle;
-use App\Models\Communication\EmailTemplate;
+use App\Models\Explorer\Circles\Circle;
+use App\Models\Explorer\Communication\EmailTemplate;
 use Illuminate\Support\Facades\Mail;
 use RuntimeException;
 

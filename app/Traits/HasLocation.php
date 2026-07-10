@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 /**
- * Fulfils the App\Contracts\Locatable contract by delegating to the model's
+ * Fulfils the App\Contracts\Explorer\Locatable contract by delegating to the model's
  * Circle, where the location is actually stored (circles.locatable_*).
  * Requires the consuming model to also use HasCircle (so $this->circle exists).
  */
