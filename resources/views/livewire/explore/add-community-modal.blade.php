@@ -13,11 +13,10 @@
     </div>
 
     @guest
+        {{-- Adding a community requires an account. Sign-in is provided by the
+             host application; this standalone build has no in-app auth. --}}
         <div class="p-6 text-center space-y-3">
-            <p>{{ __('communities.login_to_add') }}</p>
-            <a href="{{ route('login') }}" class="text-indigo-600 underline">
-                {{ __('ui.login') }}
-            </a>
+            <p>{{ __('communities.add_requires_account') }}</p>
         </div>
     @else
         @if ($isOrganisation)

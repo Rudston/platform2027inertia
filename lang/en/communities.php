@@ -57,6 +57,7 @@ return [
 
     // Add-community modal — auth guard, organisation form
     'login_to_add'                   => 'Please log in to add a community to the platform.',
+    'add_requires_account'           => 'Adding a community requires an account. Sign-in is handled by the host application.',
     'organisation_duplicate_warning' => 'An organisation community for this organisation already exists on the platform.',
     'submit_for_approval'            => 'Submit for Approval',
     'contact_person_for_approval'    => 'Contact person for approval',

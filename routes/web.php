@@ -1,18 +1,12 @@
 <?php
 
-use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\RequestController;
-use App\Livewire\Auth\ForgotPassword;
-use App\Livewire\Auth\Login;
-use App\Livewire\Auth\Register;
-use App\Livewire\Auth\ResetPassword;
 use App\Livewire\Communities\CommunityPage;
 use App\Livewire\Explore\ExploreCommunities;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Explore is the focus of this build; the home route sends visitors straight there.
+Route::get('/', fn () => redirect()->route('explore'));
 
 Route::livewire('/counter', 'counter');
 
@@ -35,27 +29,3 @@ Route::post('/requests/confirm/{token}/approve', [RequestController::class, 'app
 
 Route::post('/requests/confirm/{token}/deny', [RequestController::class, 'deny'])
     ->name('requests.confirm.deny');
-
-/*
-|--------------------------------------------------------------------------
-| Authentication
-|--------------------------------------------------------------------------
-*/
-
-// Guest routes (the 'guest' middleware redirects authed users to /dashboard).
-Route::middleware('guest')->group(function () {
-    Route::get('/login', Login::class)->name('login');
-    Route::get('/register', Register::class)->name('register');
-    Route::get('/forgot-password', ForgotPassword::class)->name('password.request');
-    Route::get('/reset-password/{token}', ResetPassword::class)->name('password.reset');
-});
-
-// Authenticated routes.
-Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
-
-// Logout.
-Route::post('/logout', LogoutController::class)->name('logout');
